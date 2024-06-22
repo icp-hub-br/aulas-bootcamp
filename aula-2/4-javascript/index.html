@@ -1,0 +1,40 @@
+<!-- Para ver, copie e cole no browser o path:
+ Para achar o path, basta usar CTRL + O e copiar o path do arquivo. Exemplo:
+ file:///C:/Users/bryan/Desktop/ICP/aula-2/
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo Simples com JavaScript</title>
+    <link rel="stylesheet" href="dist/tailwind.css" />
+    <script>
+      function changeText() {
+        const userInput = document.getElementById("userInput").value;
+        document.getElementById("message").innerText = userInput;
+      }
+    </script>
+  </head>
+  <body class="bg-gray-100 text-gray-900 p-5">
+    <header class="bg-gray-800 text-white py-5 text-center">
+      <h1 class="text-3xl font-bold">Exemplo Simples com JavaScript</h1>
+    </header>
+    <main class="p-5">
+      <p id="message" class="mb-5">Clique no botão para mudar este texto.</p>
+      <input
+        type="text"
+        id="userInput"
+        class="border border-gray-300 p-2 rounded mb-3 w-full"
+        placeholder="Digite o novo texto aqui"
+      />
+      <button
+        onclick="changeText()"
+        class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+      >
+        Alterar texto
+      </button>
+    </main>
+  </body>
+</html>

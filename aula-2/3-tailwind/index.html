@@ -1,0 +1,146 @@
+<!-- Para ver, copie e cole no browser o path:
+ Para achar o path, basta usar CTRL + O e copiar o path do arquivo. Exemplo:
+ file:///C:/Users/bryan/Desktop/ICP/aula-2/
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemplo Básico de HTML</title>
+    <link rel="stylesheet" href="dist/tailwind.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-900 p-5">
+    <header class="bg-gray-800 text-white py-5 text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-2">
+        Bem-vindo ao Meu Primeiro Código em HTML
+      </h1>
+    </header>
+    <main class="p-5">
+      <p class="mb-5">
+        Este é um parágrafo de exemplo. HTML é usado para estruturar o conteúdo
+        da web.
+      </p>
+      <div class="mb-5">
+        <a
+          href="https://lu.ma/l2x53wnj"
+          class="text-blue-600 hover:underline block"
+          >Inscreva-se aqui no Bootcamp</a
+        >
+        <a
+          href="https://lu.ma/l2x53wnj"
+          target="_blank"
+          class="text-blue-600 hover:underline block"
+          >Inscreva-se aqui no Bootcamp</a
+        >
+      </div>
+      <p class="mb-5">E ae, notaram a diferença?</p>
+      <div class="bg-white p-5 mt-5 shadow-md rounded-md">
+        <h2 class="text-2xl font-semibold mb-3">Seção de Conteúdo</h2>
+        <p class="mb-3">Outro parágrafo dentro de um div.</p>
+        <img
+          src="https://pbs.twimg.com/media/GOnnmXpWkAEGEF2?format=jpg&name=large"
+          alt="Bootcamp"
+          class="w-full h-auto mt-2 rounded-md"
+        />
+      </div>
+      <div class="bg-white p-5 mt-5 shadow-md rounded-md">
+        <h1 class="text-2xl font-semibold mb-3">Professores do Bootcamp:</h1>
+        <ul class="list-disc list-inside">
+          <li>Bry</li>
+          <li>Luiz</li>
+        </ul>
+      </div>
+      <div class="bg-white p-5 mt-5 shadow-md rounded-md">
+        <h1 class="text-2xl font-semibold mb-3">Inscreva-se aqui</h1>
+        <form>
+          <label for="name" class="block mb-2">Nome:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="border border-gray-300 p-2 rounded mb-3 w-full"
+          />
+          <button
+            type="button"
+            onclick="alert('Você se inscreveu!')"
+            class="bg-blue-500 text-white p-2 rounded hover:bg-blue-600"
+          >
+            Inscrever-se
+          </button>
+        </form>
+      </div>
+      <div class="mt-5">
+        <h2 class="text-2xl font-semibold mb-3">
+          Funcionalidades Importantes do CSS
+        </h2>
+        <div class="flex gap-3 mb-5">
+          <div class="bg-blue-600 text-white p-5 rounded flex-1 text-center">
+            Flex Item 1
+          </div>
+          <div class="bg-blue-600 text-white p-5 rounded flex-1 text-center">
+            Flex Item 2
+          </div>
+          <div class="bg-blue-600 text-white p-5 rounded flex-1 text-center">
+            Flex Item 3
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-3 mb-5">
+          <div class="bg-red-600 text-white p-5 rounded text-center">
+            Grid Item 1
+          </div>
+          <div class="bg-red-600 text-white p-5 rounded text-center">
+            Grid Item 2
+          </div>
+          <div class="bg-red-600 text-white p-5 rounded text-center">
+            Grid Item 3
+          </div>
+          <div class="bg-red-600 text-white p-5 rounded text-center">
+            Grid Item 4
+          </div>
+        </div>
+        <button
+          class="bg-green-500 text-white p-2 rounded hover:bg-green-600 transition duration-300 ease-in-out mb-5"
+        >
+          Passe o mouse
+        </button>
+        <div class="w-24 h-24 bg-purple-700 mb-5"></div>
+        <div class="bg-gray-700 text-white p-5 mb-5 shadow-md rounded">
+          Sombra
+        </div>
+        <div class="bg-teal-500 text-white p-5 rounded mb-5">Variáveis CSS</div>
+        <div class="flex gap-5 mb-5">
+          <div class="bg-purple-700 text-white p-10 rounded">
+            Exemplo de Padding
+          </div>
+          <div class="bg-red-600 text-white m-10 p-5 rounded">
+            Exemplo de Margin
+          </div>
+        </div>
+        <div class="relative bg-gray-300 h-52 mb-5">
+          <div class="absolute top-5 left-5 bg-blue-600 text-white p-2 rounded">
+            Absolute
+          </div>
+          <div
+            class="relative top-16 left-10 bg-orange-600 text-white p-2 rounded"
+          >
+            Relative
+          </div>
+        </div>
+        <div
+          class="fixed top-5 right-5 bg-green-500 text-white p-2 rounded z-50"
+        >
+          Fixed
+        </div>
+        <div class="h-72 overflow-y-scroll bg-gray-400 p-5 mb-5">
+          <div class="sticky top-0 bg-red-600 text-white p-2 rounded">
+            Sticky
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+<!-- E ae, achou mais facil? -->

@@ -1,0 +1,22 @@
+{
+  "canisters": {
+    "icp_aula1_test_backend": {
+      "main": "src/icp_aula1_test_backend/main.mo",
+      "type": "motoko"
+    },
+    "icp_aula1_test_frontend": {
+      "dependencies": ["icp_aula1_test_backend"],
+      "source": ["src/icp_aula1_test_frontend/dist"],
+      "type": "assets",
+      "workspace": "icp_aula1_test_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
