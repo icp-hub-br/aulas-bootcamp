@@ -92,7 +92,7 @@ ul li {
 /* Flexbox */
 .flexbox-example {
   display: flex;
-  gap: 10px;
+  gap: 50px;
   margin-bottom: 20px;
 }
 
@@ -134,13 +134,13 @@ ul li {
 }
 
 #transition-button:hover {
-  background-color: #27ae60;
+  background-color: #4b27ae;
 }
 
 /* Animações */
 @keyframes example-animation {
   from {
-    background-color: #8e44ad;
+    background-color: #00f7ff;
   }
   to {
     background-color: #9b59b6;
@@ -159,10 +159,16 @@ ul li {
 #shadow-box {
   background-color: #34495e;
   color: white;
-  padding: 20px;
-  margin-bottom: 20px;
+  padding: 100px;
+  margin-bottom: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 5px;
+  border-radius: 50px;
+}
+
+.shadow-example {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
 }
 
 /* Variáveis CSS */
@@ -240,7 +246,7 @@ ul li {
   right: 20px;
   background-color: #2ecc71;
   color: white;
-  padding: 10px;
+  padding: 100px;
   border-radius: 5px;
   z-index: 1000; /* Garantir que fique acima de outros elementos */
 }

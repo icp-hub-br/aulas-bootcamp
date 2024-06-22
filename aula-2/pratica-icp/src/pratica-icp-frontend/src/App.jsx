@@ -1,4 +1,4 @@
-// import { pratica_icp_backend } from "declarations/pratica-icp-backend";
+import { pratica_icp_backend } from "declarations/pratica-icp-backend";
 
 function App() {
   // Complete as linhas abaixo
@@ -17,20 +17,20 @@ function App() {
     try {
       switch (operation) {
         case "add":
-          response = await icp_aula1_test_backend.add(value);
+          response = await pratica_icp_backend.add(value);
           break;
         case "sub":
-          response = await icp_aula1_test_backend.sub(value);
+          response = await pratica_icp_backend.sub(value);
           break;
         case "mul":
-          response = await icp_aula1_test_backend.mul(value);
+          response = await pratica_icp_backend.mul(value);
           break;
         case "div":
-          response = await icp_aula1_test_backend.div(value);
+          response = await pratica_icp_backend.div(value);
           response = response !== null ? response : "Error";
           break;
         case "clearall":
-          await icp_aula1_test_backend.clearall();
+          await pratica_icp_backend.clearall();
           response = 0;
           break;
         default:
