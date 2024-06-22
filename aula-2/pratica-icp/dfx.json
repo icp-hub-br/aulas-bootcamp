@@ -1,14 +1,18 @@
 {
   "canisters": {
-    "icp_aula1_test_backend": {
-      "main": "src/icp_aula1_test_backend/main.mo",
+    "pratica-icp-backend": {
+      "main": "src/pratica-icp-backend/main.mo",
       "type": "motoko"
     },
-    "icp_aula1_test_frontend": {
-      "dependencies": ["icp_aula1_test_backend"],
-      "source": ["src/icp_aula1_test_frontend/dist"],
+    "pratica-icp-frontend": {
+      "dependencies": [
+        "pratica-icp-backend"
+      ],
+      "source": [
+        "src/pratica-icp-frontend/dist"
+      ],
       "type": "assets",
-      "workspace": "icp_aula1_test_frontend"
+      "workspace": "pratica-icp-frontend"
     }
   },
   "defaults": {
