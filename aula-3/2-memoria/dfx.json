@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "memoria_backend": {
+      "main": "src/memoria_backend/main.mo",
+      "type": "motoko"
+    },
+    "memoria_frontend": {
+      "dependencies": [
+        "memoria_backend"
+      ],
+      "source": [
+        "src/memoria_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "memoria_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
