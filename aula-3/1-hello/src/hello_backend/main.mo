@@ -2,9 +2,9 @@ import Debug "mo:base/Debug";
 
 
 actor {
-  public query func greet(name : Text) : async Text {
-    return "Hello, " # name # "!";
-  };
+  
+  
+  
   let x = 1; /// declaração
   let y = x + 1; /// declaração
 
@@ -14,7 +14,11 @@ actor {
     x * y + x /// expressão
   };
 
-  let w = 42 + (1 * 37) / 12: Nat;
+  public func getZ(): async Nat {
+    return z;
+  };
+  
+  //let w = 42 + (1 * 37) / 12: Nat;
 
 
 
@@ -34,6 +38,10 @@ actor {
     Debug.print("hello world");
     Debug.print(debug_show(("hello", 42, "world")));
     return "Hello, World!";
+  };
+
+  public query func greet(name : Text) : async Text {
+    return "Hello, " # name # "!";
   };
 
   
